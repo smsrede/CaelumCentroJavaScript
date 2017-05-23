@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<h3>Alcool ou Gasolina<h3>
+<script>
+	var precoG = 2.93;
+	var precoA = 2.49;
+	var tanque = 40;
+
+	var caminhoPercorridoComGasolina = 480;
+	var caminhoPercorridoComAlcool = 300;
+
+	var tanque = 40;
+	var consumoComGasolina = caminhoPercorridoComGasolina / tanque;
+	var consumoComAlcool = caminhoPercorridoComAlcool / tanque;
+	
+	//variavel calculada baseada no caulo acima. Precisa ficr aqui
+	var precoPorKmG = consumoComGasolina * precoG;
+	var precoPorKmA = consumoComAlcool * precoA;
+
+	//consumo com gasolina
+	document.write("<br><br>Seu carro na Gasolina percorre " + consumoComGasolina.toFixed(2) + " KM por litro");
+	
+	//consumo com Alcool
+	document.write("<br><br>Seu carro na Alcool percorre " + consumoComAlcool.toFixed(2) + " KM por litro");
+	
+	//Valor gasto com gasolina
+	document.write("<br><br>Seu carro na Gasolina gasta  R$" + precoPorKmG.toFixed(2) + " em " + consumoComGasolina + "KM");
+	
+	//Valor gasto com Alcool
+	document.write("<br><br>Seu carro no Alcool gasta  R$" + precoPorKmA.toFixed(2) + " em " + consumoComGasolina + "KM");
+
+</script>
