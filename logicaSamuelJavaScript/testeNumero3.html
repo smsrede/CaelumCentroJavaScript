@@ -12,18 +12,33 @@
 	var total = eu + adriano + paulo;
 	var media = total/3;	
 
-document.write("<h1>OlÁ MUNDO!</h1>");
+//Funções:
+function pulaLinha(){
+	document.write("<br><br>");
+}
+
+//Funções:
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+//Console:
+console.log("Olá DEV!" + 1000);
+
+//Corpo do código
+mostra("Olá DEV");
 document.write("MINHA IDADE é " + idadeSamuel);
-document.write("<br>A idade de Pedro é " + idadePedro);
-document.write("<br>A soma é " + (somaIdades));
-document.write("<br>A média é " + ((somaIdades)/2));
-
-document.write("<br>A média de idade do exerc. 2.6 é " + media);
-document.write("<br>A média de idade do exerc. 2.6 é " + Math.round(media));
-
-
-
-
+pulaLinha();
+document.write("A idade de Pedro é " + idadePedro);
+pulaLinha();
+document.write("A soma é " + (somaIdades));
+pulaLinha();
+document.write("A média é " + ((somaIdades)/2));
+pulaLinha();
+document.write("A média de idade do exerc. 2.6 é " + media);
+pulaLinha();
+document.write("A média de idade do exerc. 2.6 é " + Math.round(media));
 
 
 
